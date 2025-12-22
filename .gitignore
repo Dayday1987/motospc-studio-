@@ -137,3 +137,18 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Supabase
+.supabase/
+supabase/.env
+
+# Vercel
+.vercel/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+*.pdf
