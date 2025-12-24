@@ -1,25 +1,56 @@
 # MotoSpec Studio
 
-MotoSpec Studio is a web-based platform for researching motorcycles, planning custom builds, and managing parts, specifications, and configurations in one centralized system.
+MotoSpec Studio is a web-based motorcycle specification, parts, and build configuration platform.  
+It allows users to explore motorcycle specs, manage a personal garage, configure builds with compatible OEM and aftermarket parts, and save price-stable build snapshots.
 
-## Purpose
-This repository contains the full source code, database schema, and documentation for MotoSpec Studio. The project focuses on accurate data modeling, compatibility-aware build planning, and a clean, scalable architecture.
+The product is designed as a paid web app with a free trial period.
 
-## Status
-Early development / MVP phase.
+---
 
-## Tech Stack
-- Next.js
-- TypeScript
-- Supabase (PostgreSQL, Auth)
-- Vercel (deployment)
+## Project Status
 
-## Structure
-- `apps/web` — Web application
-- `packages/db` — Database schema and migrations
-- `packages/seed` — Seed data
-- `packages/jobs` — Background jobs
-- `docs` — Product and technical documentation
+This project is under active development.
 
-## Notes
-This project is under active development and subject to change.
+**Completed:**
+- Database schema (Postgres / Supabase)
+- Row Level Security (RLS) policies
+- Seed data for motorcycles, parts, and compatibility
+- Product and technical documentation
+
+**In Progress / Next:**
+- Frontend initialization (Next.js)
+- Supabase client integration
+- Motorcycle catalog UI
+- User garage and build configurator
+
+---
+
+## Tech Stack (Planned / Locked)
+
+- **Frontend:** Next.js (App Router, TypeScript)
+- **Backend:** Supabase
+- **Database:** PostgreSQL (Supabase)
+- **Auth:** Supabase Auth
+- **Hosting:** Vercel (free tier)
+- **Payments:** Stripe (planned)
+
+---
+
+## Repository Structure
+
+```text
+apps/
+  web/              # Next.js frontend app
+
+docs/
+  product/          # Product planning and MVP docs
+  technical/        # Architecture, data model, stack decisions
+
+packages/
+  db/               # Shared database utilities (future)
+  jobs/             # Background jobs / workers (future)
+  seed/             # Seed helpers (future)
+  shared/           # Shared types and utilities
+
+supabase/
+  migrations/       # Database schema, RLS, seed data
